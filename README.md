@@ -65,14 +65,20 @@ Usage
 
 Project Structure
 
-.
 ├── pdfs/                     # Folder to store PDF files
+
 ├── pdf_embeddings.db         # SQLite database for storing embeddings
+
 ├── main.py                   # Main script to process PDFs and handle queries
+
 ├── database_functions.py     # Functions for database operations
+
 ├── process_pdf.py            # Functions for extracting text from PDFs
+
 ├── embed.py                  # Functions to generate embeddings using Amazon Bedrock
+
 ├── search.py                 # Functions for FAISS-based similarity search
+
 └── call_bedrock.py           # Function to call Amazon Bedrock for query responses
 
 Important Notes
