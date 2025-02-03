@@ -43,7 +43,7 @@ def searchPDF(cursor, query: list):
 
     # FAISS search needs 2 dimensional arrays so if its 1D, reshape to 2D
     if queryVector.ndim == 1:  
-        queryVector = queryVector.reshape(1, -1)  # this makes it 2D somehow idk
+        queryVector = queryVector.reshape(1, -1)  # reshapes to 2D
 
 
     # search embeddings index for similarity to query vector, return 5 closest matches
