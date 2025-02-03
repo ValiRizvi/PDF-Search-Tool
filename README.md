@@ -34,18 +34,22 @@ Installation
         git clone <repository_url>
         cd <repository_directory>
 
+
     Create a Virtual Environment (Optional but Recommended)
 
         python -m venv venv
         source venv/bin/activate  # On Windows use: venv\Scripts\activate
 
+
     Install Required Libraries
 
         pip install -r requirements.txt
 
+
     Create PDF folder
 
         create a folder in the root directory called 'pdfs'.  
+
 
     Create SQLite Database
 
