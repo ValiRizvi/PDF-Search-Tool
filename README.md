@@ -43,6 +43,33 @@ Installation
 
         pip install -r requirements.txt
 
+    Create PDF folder
+
+        create a folder in the root directory called 'pdfs'.  
+
+    Create SQLite Database
+
+        Run this script in a new file.  You can delete the script after db file is created.
+
+            import sqlite3
+    
+            # Connect to SQLite database (this will create the file if it doesn't exist)
+            conn = sqlite3.connect('pdf_embeddings.db')
+            cursor = conn.cursor()
+            
+            # Create the embeddings table
+            cursor.execute('''
+                CREATE TABLE IF NOT EXISTS embeddings (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    pdf_path TEXT NOT NULL,
+                    page_number INTEGER NOT NULL,
+                    embedding BLOB NOT NULL
+                )
+            ''')
+            
+            conn.commit()
+            conn.close()
+
 
 Usage
 
