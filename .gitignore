@@ -1,0 +1,5 @@
+/pdfs
+/__pycache__
+/test_questions
+/venv
+pdf_embeddings.db

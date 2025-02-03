@@ -1,0 +1,6 @@
+boto3
+pymupdf
+faiss-cpu
+numpy
+sqlite3
+pickle5
